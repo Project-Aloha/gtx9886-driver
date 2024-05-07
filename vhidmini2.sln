@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32106.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 12.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Driver", "Driver", "{837BF49F-1143-4D82-A340-99AAFAE83F72}"
 EndProject
@@ -19,9 +19,9 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{64048006-1C5F-4262-823B-54310D7F3869}.Debug|ARM64.ActiveCfg = Release|ARM64
-		{64048006-1C5F-4262-823B-54310D7F3869}.Debug|ARM64.Build.0 = Release|ARM64
-		{64048006-1C5F-4262-823B-54310D7F3869}.Debug|ARM64.Deploy.0 = Release|ARM64
+		{64048006-1C5F-4262-823B-54310D7F3869}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{64048006-1C5F-4262-823B-54310D7F3869}.Debug|ARM64.Build.0 = Debug|ARM64
+		{64048006-1C5F-4262-823B-54310D7F3869}.Debug|ARM64.Deploy.0 = Debug|ARM64
 		{64048006-1C5F-4262-823B-54310D7F3869}.Debug|Win32.ActiveCfg = Debug|Win32
 		{64048006-1C5F-4262-823B-54310D7F3869}.Debug|Win32.Build.0 = Debug|Win32
 		{64048006-1C5F-4262-823B-54310D7F3869}.Debug|x64.ActiveCfg = Debug|x64

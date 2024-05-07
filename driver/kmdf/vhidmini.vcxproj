@@ -228,10 +228,14 @@
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\inc;..</AdditionalIncludeDirectories>
       <ExceptionHandling>
       </ExceptionHandling>
-      <WppEnabled>true</WppEnabled>
-      <WppTraceFunction>Trace(LEVEL,FLAGS,MSG,...)</WppTraceFunction>
+      <WppEnabled>false</WppEnabled>
+      <WppTraceFunction>
+      </WppTraceFunction>
       <WppScanConfigurationData>trace.h</WppScanConfigurationData>
       <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <WppRecorderEnabled>true</WppRecorderEnabled>
+      <WppAdditionalIncludeDirectories>
+      </WppAdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);_UNICODE;UNICODE;POOL_NX_OPTIN=1</PreprocessorDefinitions>
@@ -248,15 +252,13 @@
   <ItemGroup>
     <ClCompile Include="..\vhidmini.c">
       <WppEnabled Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</WppEnabled>
-      <WppScanConfigurationData Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:\Users\eric\Downloads\Windows-driver-samples-master\Windows-driver-samples-master\hid\vhidmini2\driver\trace.h</WppScanConfigurationData>
+      <WppScanConfigurationData Condition="'%(ClCompile.ScanConfigurationData)' == ''">trace.h</WppScanConfigurationData>
       <WppTraceFunction Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Trace(LEVEL,FLAGS,MSG,...)</WppTraceFunction>
-      <WppAdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:\Users\eric\Downloads\Windows-driver-samples-master\Windows-driver-samples-master\hid\vhidmini2\driver;%(WppAdditionalIncludeDirectories)</WppAdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="util.c">
       <WppEnabled Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</WppEnabled>
       <WppTraceFunction Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Trace(LEVEL,FLAGS,MSG,...)</WppTraceFunction>
-      <WppScanConfigurationData Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:\Users\eric\Downloads\Windows-driver-samples-master\Windows-driver-samples-master\hid\vhidmini2\driver\trace.h</WppScanConfigurationData>
-      <WppAdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">C:\Users\eric\Downloads\Windows-driver-samples-master\Windows-driver-samples-master\hid\vhidmini2\driver;%(WppAdditionalIncludeDirectories)</WppAdditionalIncludeDirectories>
+      <WppScanConfigurationData Condition="'%(ClCompile.ScanConfigurationData)' == ''">trace.h</WppScanConfigurationData>
     </ClCompile>
     <ResourceCompile Include="vhidmini.rc" />
   </ItemGroup>
